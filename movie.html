@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Movies Description</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- font boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Add font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- external css -->
+    <link rel="stylesheet" href='style.css' />
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- ------- auto complete search bar ------ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
+</head>
+
+<body>
+    <!-- <div id="preloader"> -->
+
+
+    </div>
+
+
+    <navbar>
+
+        <div class="nav">
+
+            <a href="index.html" class="nav_link ">
+                <i class="bx bx-search"></i>
+                <span class="nav_link_title">Search</span>
+            </a>
+
+            <a href="movie.html" class="nav_link nav_active">
+                <i class="bx bx-movie"></i>
+                <span class="nav_link_title">About Movie</span>
+            </a>
+
+            <a href="#Recmndr" class="nav_link">
+                <i class="bx bx-photo-album"></i>
+                <span class="nav_link_title">Recommender</span>
+            </a>
+
+            <a href="#About" class="nav_link">
+                <i class="bx bx-bulb"></i>
+                <span class="nav_link_title">About</span>
+            </a>
+
+
+        </div>
+
+
+
+    </navbar>
+
+
+
+
+
+
+
+    <!-- ----------------  search bar ---------------------- -->
+
+
+
+    <!-- ----------------  search bar ---------------------- -->
+
+    <!--! ------------------------------------------------------------------- -->
+
+    <section class="movie section_padding" id="Movie">
+
+
+        <div class="container">
+
+
+            <div class="section_title">
+                <h3 class="main_title">Movie Description</h3>
+                <h5 class="sub_title">Here is the Description of your searched Movie</h5>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="row justify_content_cntr">
+
+
+
+                <div class="movie_card" id="glow">
+
+                    <div class="info_section">
+
+                        <div class="movie_header">
+                            <img class="poster_img" alt="movie poster"
+                                src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg" />
+                            <h1>{Movie Name}</h1>
+                            <h4>{year}, {Dir}</h4>
+                            <span class="minutes">{time}</span>
+                            <p class="type">{Action, Crime, Fantasy}</p>
+                            <h4 class="mv_rating" id="rating">Movie Rating : {}/10</h4>
+                        </div>
+                        <div class="movie_desc">
+                            <p class="text">
+                                {Set in a world where fantasy creatures live side by side with humans. A human cop is
+                                forced to work with an Orc to find a weapon everyone is prepared to kill for.
+                                Set in a world where fantasy creatures live side by side with humans. A human cop is
+                                forced }
+                            </p>
+
+
+                        </div>
+
+                        <div class="know_more">
+                            <a href="#"  target="_blank" class=""> <i class=" fa fa-link"></i> {Know More}</a>
+                        </div>
+                    </div>
+                    <div class="blur_back poster_back"></div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="container2">
+                <div class="arrow"></div>
+                <div class="arrow"></div>
+                <h6>Recommendations</h6>
+                <div class="arrow"></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+    <!--! ------------------------------------------------------------------- -->
+
+    <!--! ------------------------------------------------------------------- -->
+
+
+
+
+
+    <section class="recmndr section_padding" id="Recmndr">
+
+
+        <div class="container">
+
+
+
+            <div class="section_title">
+                <h3 class="main_title">Recommendations</h3>
+                <h5 class="sub_title">Here are some Recommendations related to {{Movie_name}}</h5>
+
+            </div>
+
+            <!-- --------------------------- -->
+
+            <div class="row justify_content_cntr">
+
+                <div class="rec_items">
+
+
+                    <!-- ------ card item s ------ -->
+                    <div class="rec_card .ani1">
+                        <div class="poster">
+                            <img src="/imgs/giphy.gif" alt="">
+                        </div>
+
+                        <div class="details">
+                            <h3 class="rec_mv_name">Movie Name</h3>
+
+
+
+                            <div class="tags">
+                                <span>{genre1}</span>
+                                <span>{genre2}</span>
+                            </div>
+                            <div class="extra_info">
+
+
+                                <h4 class="mv_year">Moive year</h4>
+
+                                <div class="rating">
+                                    <!-- <i class = "fa fa-star"></i> -->
+                                    <h4>Rating : {}/10</h4>
+
+                                </div>
+
+                                <div class="btn">
+                                    <a href="#">Know More</a>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <!-- ------ card item e ------ -->
+                    <!-- ------ card item s ------ -->
+                    <div class="rec_card .ani1">
+                        <div class="poster">
+                            <img src="/imgs/giphy.gif" alt="">
+                        </div>
+
+                        <div class="details">
+                            <h3 class="rec_mv_name">Movie Name</h3>
+
+
+
+                            <div class="tags">
+                                <span>{genre1}</span>
+                                <span>{genre2}</span>
+                            </div>
+
+                            <div class="extra_info">
+
+
+                                <h4 class="mv_year">Moive year</h4>
+
+                                <div class="rating">
+                                    <!-- <i class = "fa fa-star"></i> -->
+                                    <h4>Rating : {}/10</h4>
+
+                                </div>
+
+                                <div class="btn">
+                                    <a href="#">Know More</a>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <!-- ------ card item e ------ -->
+                    <!-- ------ card item s ------ -->
+                    <div class="rec_card .ani1">
+                        <div class="poster">
+                            <img src="/imgs/giphy.gif" alt="">
+                        </div>
+
+                        <div class="details">
+                            <h3 class="rec_mv_name">Movie Name</h3>
+
+
+
+                            <div class="tags">
+                                <span>{genre1}</span>
+                                <span>{genre2}</span>
+                            </div>
+
+                            <div class="extra_info">
+
+
+                                <h4 class="mv_year">Moive year</h4>
+
+                                <div class="rating">
+                                    <!-- <i class = "fa fa-star"></i> -->
+                                    <h4>Rating : {}/10</h4>
+
+                                </div>
+
+                                <div class="btn">
+                                    <a href="#">Know More</a>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <!-- ------ card item e ------ -->
+                    <!-- ------ card item s ------ -->
+                    <div class="rec_card .ani1">
+                        <div class="poster">
+                            <img src="/imgs/giphy.gif" alt="">
+                        </div>
+
+                        <div class="details">
+                            <h3 class="rec_mv_name">Movie Name</h3>
+
+
+
+                            <div class="tags">
+                                <span>{genre1}</span>
+                                <span>{genre2}</span>
+                            </div>
+
+                            <div class="extra_info">
+
+
+                                <h4 class="mv_year">Moive year</h4>
+
+                                <div class="rating">
+                                    <!-- <i class = "fa fa-star"></i> -->
+                                    <h4>Rating : {}/10</h4>
+
+                                </div>
+
+                                <div class="btn">
+                                    <a href="#">Know More</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- ------ card item e ------ -->
+
+                    <!-- ------ card item s ------ -->
+                    <div class="rec_card .ani1">
+                        <div class="poster">
+                            <img src="/imgs/giphy.gif" alt="">
+                        </div>
+
+                        <div class="details">
+                            <h3 class="rec_mv_name">Movie Name</h3>
+
+
+
+                            <div class="tags">
+                                <span>{genre1}</span>
+                                <span>{genre2}</span>
+                            </div>
+
+                            <div class="extra_info">
+
+
+                                <h4 class="mv_year">Moive year</h4>
+
+                                <div class="rating">
+                                    <!-- <i class = "fa fa-star"></i> -->
+                                    <h4>Rating : {}/10</h4>
+
+                                </div>
+
+                                <div class="btn">
+                                    <a href="#">Know More</a>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                    <!-- ------ card item e ------ -->
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+    <!--! ----------------------------------------------------- -->
+
+
+
+
+    <section class="about section_padding" id="About">
+
+        <div class="container">
+
+            <div class="section_title">
+                <h3 class="main_title">About</h3>
+                <h5 class="sub_title">Learn about this Project</h5>
+
+            </div>
+
+
+
+            <div class="row justify_content_cntr">
+
+                <div class="about_box">
+                    <p>
+                        Movie recommendation using <span>CountVectorizer</span> is a natural language processing (NLP)
+                        approach for recommending movies to users based on their textual reviews or descriptions.
+                        CountVectorizer is a method that converts text data into a numerical format that can be used by
+                        machine learning algorithms.
+                        In this approach, textual data from movie reviews are preprocessed and converted into a matrix
+                        of
+                        word counts using CountVectorizer.
+                        Then, a similarity matrix is created to compare each movie's word count matrix with all other
+                        movies. Finally,
+                        the recommendation system recommends movies to the user based on the highest similarity score
+                        with
+                        their input text.
+                        This approach is popular in movie recommendation systems due to its simplicity
+                        and effectiveness.<br>
+                    </p>
+                    <p>
+                        <br> The system is deployed using <span>Flask</span> framework, which enables users to interact
+                        with the system
+                        through a web interface.
+                        The user can input their preferences and receive recommendations based on their input.
+                    </p>
+                    <div class="git_link">
+                        <h4>View the Source code of this Project :
+                            <a href="https://github.com/Raj-Gurjar/New_Moive_recc" target="_blank"><i
+                                    class="fa fa-github-square"></i></a>
+                        </h4>
+                    </div>
+                </div>
+
+
+                <div class="gradient_design">
+
+                    <div class="about_us_title">
+                        <h3>
+                            Meet The Creators
+                        </h3>
+                    </div>
+                    <!-- ----------------------------- -->
+                    <div class="about_us">
+
+                        <!--? Item1 -s -->
+
+                        <!-- <div class="p1 port_item"> -->
+                        <div class="cardx card0">
+                            <div class="border">
+                                <h3>Raj Chhalotre</h3>
+                                <h4>Frontend</h4>
+                                <p>
+                                    Front End | AI | ML | C++
+                                </p>
+                                <div class="icons">
+                                    <a href="https://www.linkedin.com/in/raj-chhalotre-29jul01/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="https://github.com/Raj-Gurjar" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- </div> -->
+
+                        <!-- <div class="p1 port_item"> -->
+                        <div class="cardx card1">
+                            <div class="border">
+                                <h3>Hemant Rajput</h3>
+                                <h4>Data Science</h4>
+                                <p>
+                                    Front End | AI | ML | C++
+                                </p>
+                                <div class="icons">
+                                    <a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                                    <a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                    <a href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+
+
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+           
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Add Js  Bootstrap-->
+
+    <script src="script.js" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+</body>
+
+</html>
